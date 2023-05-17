@@ -1,18 +1,24 @@
 class Main {
-    public static void main(String[] args) {
-
-        String username;
-        String password;
-        Mhs mhs = new Mhs(username: "ini_usernama", password: "ini_password");
+    public static void main(String[] args){
         
-        mhs.setnama(nama: "Difa Riza Fahlefi");
-        mhs.setnim(nim:"G.111.19.0007");
-        mhs.setsmt(smt:8);
+        Mhs mhs = new Mhs("Ini Username", "Ini Password");
+        // diatas panggil construktor dgn argumen
 
-        System.out.println("Nama Mahasiswa:"+ mhs.getnama());
-        System.out.println("Nim:"+ mhs.getnim());
-        System.out.println("Smt:"+ mhs.getsmt());
-        System.out.println("Username:"+ mhs.getusername());
-        System.out.println("Password:"+ mhs.getpassword());
+        mhs.setnama ("Difa Riza Fahlefi");
+        mhs.setnim("G.111.19.0007");
+        mhs.setsmt(8);
+        
+        // mhs.setNama();
+        // mhs.setNim();
+        // mhs.setSmt();
+        
+        System.out.println("Nama Mahasiswa:" + mhs.getnama());
+        System.out.println("Nim Mahasiswa:" + mhs.getnim());
+        System.out.println("Smt Maha siswa:" + mhs.getsmt());
+
+        System.out.println("Username:" + mhs.getUsername());
+        System.out.println("Password:" + mhs.getPassword());
+        
     }
+        
 }
