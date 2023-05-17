@@ -1,29 +1,37 @@
 package pengguna;
 
-class Mhs {
-    public String nama ;
-    public String nim ;
-    private int smt ;
-    
-    public Mhs (String arg_nama, String arg_nim, int arg_smt){
-        this.nama = arg_nama;
-        this.nim = arg_nim;
-        this.smt = arg_smt;
-       }
+public class Mhs extends User {
+    //// code dibawah turunan kelas 
+    public Mhs(String arg_username, String arg_password) {
+        super(arg_username, arg_password);
+        
+    }
+    String nama ;
+    String nim ;
+    int smt ;
 
-    void setnama(String nama){
+    // public Mhs (String arg_nama, String arg_nim, int arg_smt){
+    //     this.Nama = arg_nama;
+    //     this.nim = arg_nim;
+    //     this.smt = arg_smt;
+    //    }
+    // fungsi 
+    
+    public void setnama(String nama){
         this.nama = nama;
     }
     public String getnama(){
         return this.nama;
     }
-    void setnim(String nim){
+
+    public void setnim(String nim){
         this.nim = nim;
     }
     public String getnim(){
         return this.nim;
     }
-    void setsmt (int smt){
+    
+    public void setsmt (int smt){
         this.smt = smt;
     }
     public int getsmt(){
