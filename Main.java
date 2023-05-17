@@ -20,5 +20,5 @@ class Main {
         System.out.println("Password:" + mhs.getPassword());
         
     }
-        
+       
 }
