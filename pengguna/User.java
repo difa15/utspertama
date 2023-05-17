@@ -1,8 +1,8 @@
 package pengguna;
 
 class User {
-    private String username ;    // privte String username ; //atribut
-    private String password ;   // private String password ; //
+    private String username ;    // privte String username ; 
+    private String password ;   // private String password ; 
  
     public User (String arg_username, String arg_password){
      // System.out.println("Ini adalah construktor dengan argumen dari kelas user");
